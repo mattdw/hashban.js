@@ -1,0 +1,9 @@
+* default `$(sel).hashban()` should operate on collections of links,
+  rather than magically search for them itself. (i.e. `$.fn.hashban` and
+  `$.hashban.hijack` should swap.)
+
+* names are inconsistent and in some cases wrong
+
+* https://github.com/mattdw/hashban.js/blob/master/jquery.hashban.js#L389
+  `"<div"` must be a bug.
+
