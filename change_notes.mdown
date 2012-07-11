@@ -7,3 +7,7 @@
 * https://github.com/mattdw/hashban.js/blob/master/jquery.hashban.js#L389
   `"<div"` must be a bug.
 
+* should use delegation `.on("click", "a.whatever",
+  $.hashban.clickHandler)`
+
+
