@@ -10,4 +10,14 @@
 * should use delegation `.on("click", "a.whatever",
   $.hashban.clickHandler)`
 
+there's actually no reason for it to be a plugin or a global. My
+approach would be more like:
+
+    var h = new Hashban(settings);
+    $("#content").on("click", "a.local", $.proxy(h, "clickHandler"))
+
+or maybe:
+
+    $("#content").on("click", "a.local", h.createClickHandler())
+
 
